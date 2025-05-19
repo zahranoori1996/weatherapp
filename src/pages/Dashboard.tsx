@@ -34,6 +34,26 @@ import MonthlyTemperatureChart from "../components/MonthlyTemperatureChart";
 import Weather from "../components/Weather";
 
 
+const date = new Date();
+
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+const dayName = days[date.getDay()];
+const day = date.getDate();
+const month = months[date.getMonth()];
+const year = date.getFullYear();
+
+let hours = date.getHours();
+const minutes = date.getMinutes().toString().padStart(2, '0');
+const ampm = hours >= 12 ? 'PM' : 'AM';
+hours = hours % 12;
+hours = hours ? hours : 12; 
+const formateDay = `${dayName}`
+const formattedDate = ` ${day} ${month}, ${year} ${hours}:${minutes} ${ampm}`;
+
+
+
 const Dashboard: React.FC = () => {
   const cities = [
     "Rasht",
@@ -317,10 +337,10 @@ const Dashboard: React.FC = () => {
                 >
                   <Box>
                     <Typography variant="h6" color="text.primary">
-                      Monday
+                      {formateDay}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      24 Dec, 2023 11:45 AM
+                    {formattedDate}
                     </Typography>
                     <Typography variant="h4" color="#1976d2" sx={{ mt: 1 }}>
                       {weatherData.temperature}°C

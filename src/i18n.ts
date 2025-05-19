@@ -71,7 +71,7 @@ const resources = {
       },
       dashboard: {
         title: 'داشبورد آب و هوا',
-        weather: 'هواشناسی',
+        weather: 'رشت',
         selectLabel:"مکان مورد نظر را جستجو کنید",
         temperature: 'دما',
         average: "میانگین دمای ماهانه",

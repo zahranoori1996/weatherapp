@@ -23,13 +23,13 @@ function Weather({ day, image, temp }: IWather) {
         );
         const data = response.data;
         console.log(data);
-        // setWeatherData({
-        //   temperature: Math.round(data.main.temp),
-        //   weather: data.name,
-        //   feelsLike: Math.round(data.main.feels_like),
-        //   high: Math.round(data.main.temp_max),
-        //   low: Math.round(data.main.temp_min),
-        // });
+        setWeatherData({
+          temperature: Math.round(data.main.temp),
+          weather: data.name,
+          feelsLike: Math.round(data.main.feels_like),
+          high: Math.round(data.main.temp_max),
+          low: Math.round(data.main.temp_min),
+        });
       } catch (error) {
         console.error("Error fetching weather data:", error);
       }
