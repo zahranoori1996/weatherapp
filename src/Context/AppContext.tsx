@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { createTheme, ThemeProvider as MuiThemeProvider, type Direction } from '@mui/material/styles';
-import i18n from "./i18n";
+import i18n from "../i18n";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 

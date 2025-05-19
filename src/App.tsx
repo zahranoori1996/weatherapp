@@ -1,8 +1,8 @@
 import React from 'react';
 import {  Routes, Route } from 'react-router-dom';
-import { AppProvider } from './AppContext';
-import LoginPage from './LoginPage';
-import Dashboard from './Dashboard';
+import { AppProvider } from './Context/AppContext';
+import LoginPage from './pages/LoginPage';
+import Dashboard from './pages/Dashboard';
 import './i18n';
 
 const App: React.FC = () => {

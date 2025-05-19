@@ -22,7 +22,7 @@ import {
   ButtonGroup,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import { useAppContext } from "./AppContext";
+import { useAppContext } from "../Context/AppContext";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import { DarkModeOutlined, LightModeOutlined } from "@mui/icons-material";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
@@ -30,8 +30,8 @@ import LocalPostOfficeOutlinedIcon from "@mui/icons-material/LocalPostOfficeOutl
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 import LogoutIcon from "@mui/icons-material/Logout";
-import MonthlyTemperatureChart from "./MonthlyTemperatureChart";
-import Weather from "./Weather";
+import MonthlyTemperatureChart from "../components/MonthlyTemperatureChart";
+import Weather from "../components/Weather";
 
 
 const Dashboard: React.FC = () => {

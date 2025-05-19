@@ -13,7 +13,7 @@ import {
   Paper,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import { useAppContext } from "./AppContext";
+import { useAppContext } from "../Context/AppContext";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",

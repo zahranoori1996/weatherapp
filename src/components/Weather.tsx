@@ -2,8 +2,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import axios from "axios";
 import React, { useContext, useEffect } from "react";
-import { AppContext } from "./AppContext";
-import { useTranslation } from "react-i18next";
+
 interface IWather {
   day: string;
   image: string;
