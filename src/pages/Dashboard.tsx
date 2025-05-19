@@ -51,6 +51,7 @@ hours = hours % 12;
 hours = hours ? hours : 12; 
 const formateDay = `${dayName}`
 const formattedDate = ` ${day} ${month}, ${year} ${hours}:${minutes} ${ampm}`;
+const formatFooter = ` ${hours}:${minutes} . ${dayName} ${day} ${month} ${year}`
 
 
 
@@ -430,21 +431,20 @@ const Dashboard: React.FC = () => {
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <img src="./src/assets/images/icon-nadinsoft.png" />
           <Typography color="#003464" sx={{ fontSize: "11px" }}>
-            All rights of this site are reserved for Nadin Sadr Aria Engineering
-            Company.
+          {t("dashboard.copyRight")}
           </Typography>
         </Box>
         <Box sx={{ display: "flex", paddingRight: 6, gap: 8 }}>
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <LocalPostOfficeOutlinedIcon sx={{ color: "#003464" }} />
             <Typography color="#003464" sx={{ fontSize: "11px" }}>
-              contact us : info@nadin.ir
+            {t("dashboard.call")} : info@nadin.ir
             </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <CalendarMonthOutlinedIcon sx={{ color: "#003464" }} />
             <Typography color="#003464" sx={{ fontSize: "11px" }}>
-              12:25 . Monday 23 December 2023
+             {formatFooter}
             </Typography>
           </Box>
         </Box>

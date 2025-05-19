@@ -21,6 +21,8 @@ const resources = {
         highLow: 'High: {{high}}°C Low: {{low}}°C',
         settings: 'Settings',
         logout: 'Exit',
+        copyRight : "All rights of this site are reserved for Nadin Sadr Aria Engineering Company.",
+        call : "contact us"
       },
       cites: {
         rasht: "Rasht",
@@ -80,6 +82,8 @@ const resources = {
         highLow: 'بیشینه: {{high}}°C کمینه: {{low}}°C',
         settings: 'تنظیمات',
         logout: 'خروج',
+        copyRight : "همه حقوق این سایت برای شرکت مهندسی نادین صدر آریا محفوظ است.",
+        call: "تماس با ما"
       },
       cites: {
         rasht: "رشت",
